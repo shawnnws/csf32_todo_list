@@ -28,6 +28,7 @@ export class TodoComponent implements OnInit {
   }
 
   createTodo() {
+    console.log('Form created successfully...')
     this.onFormSubmit.emit(this.todoForm.value)
   }
 

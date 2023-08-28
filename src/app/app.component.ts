@@ -13,6 +13,6 @@ export class AppComponent {
 
   receiveFormInput(event: Todo) {
     this.todoList.push(event)
-    console.log('form submitted')
+    console.log('Form submitted...')
   }
 }
