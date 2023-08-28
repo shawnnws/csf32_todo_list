@@ -1,0 +1,25 @@
+<h1>Tasks</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Description</td>
+            <td>Priority</td>
+            <td>Due</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr> {{todoList.length}}</tr>
+        <tr *ngFor="let todo of todoList">
+            <td>
+                <a> {{ todo.description }} </a>
+            </td>
+            <td>
+                {{ todo.priority }}
+            </td>
+            <td>
+                {{ todo.due }}
+            </td>
+        </tr>
+    </tbody>
+</table>
